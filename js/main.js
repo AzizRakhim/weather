@@ -42,18 +42,22 @@ function showHTML(data){
     elWeatherIcon.className = "bx bx-sun";
     elWeatherImg.src = "images/sun-dynamic-color.png";
     document.body.style.background = "#42c2ff";
+    elInput.style.setProperty("--c", "#97a0b9");
   } else if(elTemp.innerText.includes("Clear")) {
     elWeatherIcon.className = "bx bx-moon";
     elWeatherImg.src = "images/moon-dynamic-color.png";
     document.body.style.background = "#712b75";
+    elInput.style.setProperty("--c", "#F2FBFF");
   } else if(elTemp.innerText.includes("Snow")){
     elWeatherIcon.className = "bx bx-cloud-snow";
     elWeatherImg.src = "images/snow.png";
     document.body.style.background = "#6ba7cc";
-  } else if(elTemp.innerText.includes("Rain") || elTemp.innerText.includes("Mist")){
+    elInput.style.setProperty("--c", "#F2FBFF");
+  } else if(elTemp.innerText.includes("Rain") || elTemp.innerText.includes("Mist") || elTemp.innerText.includes("Haze")){
     elWeatherIcon.className  = "bx bx-cloud-rain";
     elWeatherImg.src = "images/rain.png";
     document.body.style.background = "#a8aac4";
+    elInput.style.setProperty("--c", "#F2FBFF");
   }
 }
 

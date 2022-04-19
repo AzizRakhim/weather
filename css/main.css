@@ -21,6 +21,10 @@ body {
           flex-flow: wrap column;
 }
 
+:root {
+  --placeholderColor: #97a0b9;
+}
+
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -82,7 +86,7 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 22px;
-  color: #97a0b9;
+  color: var(--c, placeholderColor);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -90,7 +94,7 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 22px;
-  color: #97a0b9;
+  color: var(--c, placeholderColor);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -98,7 +102,7 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 22px;
-  color: #97a0b9;
+  color: var(--c, placeholderColor);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -106,7 +110,7 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 22px;
-  color: #97a0b9;
+  color: var(--c, placeholderColor);
   font-family: 'Poppins', sans-serif;
 }
 
