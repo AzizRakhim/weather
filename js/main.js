@@ -38,7 +38,7 @@ function showHTML(data){
   let elWeatherIcon = document.querySelector("#weather-icon");
   let elWeatherImg = document.querySelector(".weather-img");
 
-  if(elTemp.innerText.includes("Clouds")){
+  if(elTemp.innerText.includes("Clouds") || elTemp.innerText.includes("Sunny")){
     elWeatherIcon.className = "bx bx-sun";
     elWeatherImg.src = "images/sun-dynamic-color.png";
     document.body.style.background = "#42c2ff";
@@ -49,6 +49,7 @@ function showHTML(data){
   } else if(elTemp.innerText.includes("Snow")){
     elWeatherIcon.className = "bx bx-cloud-snow";
     elWeatherImg.src = "images/snow.png";
+    document.body.style.background = "#6ba7cc";
   } else if(elTemp.innerText.includes("Rain") || elTemp.innerText.includes("Mist")){
     elWeatherIcon.className  = "bx bx-cloud-rain";
     elWeatherImg.src = "images/rain.png";

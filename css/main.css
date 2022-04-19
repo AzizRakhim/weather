@@ -41,16 +41,17 @@ body {
 }
 
 .hero__container {
-  background-color: red;
-  width: 70vw;
-  height: 85vh;
+  width: 1180px;
+  height: 620px;
   background: linear-gradient(252.44deg, rgba(239, 255, 253, 0.7) 0%, rgba(239, 255, 253, 0) 100%);
-  -webkit-backdrop-filter: blur(40px);
-          backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   border-radius: 85px;
   padding-top: 39px;
   padding-left: 77px;
   padding-right: 77px;
+  position: relative;
+  z-index: 100;
 }
 
 .hero__form {
@@ -143,8 +144,8 @@ body {
   max-width: 437px;
   max-height: 437px;
   position: absolute;
-  top: 0px;
-  right: 0;
+  top: 50px;
+  right: 170px;
   -webkit-transform: translate(30%, -30%);
           transform: translate(30%, -30%);
 }
@@ -155,27 +156,37 @@ body {
 }
 
 @media screen and (max-width: 1400px) {
+  .hero__container {
+    width: 980px;
+    height: 620px;
+  }
   .hero__img-box {
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
   }
   .hero__form {
     margin-bottom: 50px;
   }
+  .hero__img-box {
+    top: 50px;
+    right: -20px;
+  }
 }
 
 @media screen and (max-width: 1040px) {
+  .hero__container {
+    width: 900px;
+    height: 620px;
+  }
   .hero__form {
     max-width: 400px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .hero__img-box {
-    width: 200px;
-    height: 200px;
-    top: -10px;
-    right: -10px;
+  .hero__container {
+    width: 700px;
+    height: 520px;
   }
   .hero__form {
     max-width: 350px;
@@ -194,6 +205,9 @@ body {
 
 @media screen and (max-width: 768px) {
   .hero__container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 25px;
     padding-left: 39px;
     padding-right: 39px;
     border-radius: 50px;
@@ -202,15 +216,10 @@ body {
 
 @media screen and (max-width: 576px) {
   .hero__container {
+    height: 450px;
     padding-left: 25px;
     padding-right: 25px;
     border-radius: 40px;
-  }
-  .hero__img-box {
-    width: 150px;
-    height: 150px;
-    top: -10px;
-    right: -10px;
   }
   .hero__form {
     width: 100%;
