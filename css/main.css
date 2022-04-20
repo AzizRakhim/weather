@@ -19,6 +19,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: wrap column;
           flex-flow: wrap column;
+  width: 100vw;
+  overflow: hidden;
 }
 
 :root {
@@ -173,7 +175,7 @@ body {
   }
   .hero__img-box {
     top: 50px;
-    right: -20px;
+    right: 50px;
   }
 }
 
